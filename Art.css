@@ -5,7 +5,7 @@
     max-width: 500px;
     margin: 30px auto;
     font-family: 'Lora', serif;
-    color: #3e3a35;
+    color: var(--n4);
     border-radius: 4px;
     overflow: hidden;
   }
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px dashed #8b7d6b;
+    border-bottom: 3px dashed var(--gg6);
   }
 
   .artRol-photo {
@@ -112,6 +112,7 @@
     font-size: 14px;
     text-align: justify;
     min-height: 100px; 
+    color:var(--n4);
   }
   
   .artRol-body i, .artRol-body b, .artRol-body strong {color:var(--gg6); font-size:14px;}
