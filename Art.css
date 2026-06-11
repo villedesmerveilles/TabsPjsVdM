@@ -1,0 +1,173 @@
+  @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+  /* Contenedor General */
+  .artRol-container {
+    max-width: 500px;
+    margin: 30px auto;
+    font-family: 'Lora', serif;
+    color: #3e3a35;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* --- SECCIÓN DE FOTOS SOLAPADAS --- */
+  .artRol-header-gallery {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px dashed #8b7d6b;
+  }
+
+  .artRol-photo {
+    position: absolute;
+    background: var(--n1);
+    padding: 8px 8px 18px 8px;
+    border: 2px solid var(--gg6);
+    transition: transform 0.3s ease;
+  }
+
+  .artRol-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-left {
+    width: 150px;
+    height: 160px;
+    left: 20px;
+    bottom: 20px;
+    transform: rotate(-8deg);
+    z-index: 1;
+  }
+
+  .photo-center {
+    width: 260px;
+    height: 180px;
+    bottom: 15px;
+    transform: rotate(-1deg);
+    z-index: 2;
+  }
+
+  .photo-right {
+    width: 160px;
+    height: 170px;
+    right: 15px;
+    bottom: 25px;
+    transform: rotate(6deg);
+    z-index: 1;
+  }
+
+  .artRol-photo:hover {
+    z-index: 4;
+    transform: scale(1.05) rotate(0deg);
+  }
+
+  /* --- LOGO FLOTANTE --- */
+  .artRol-logo-area {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-color: var(--n1);
+    padding: 8px 15px;
+    border: 1px solid var(--gg6);
+    box-shadow: 3px 3px 0px var(--n4);
+    transform: rotate(-3deg);
+    z-index: 5;
+  }
+
+  .artRol-logo-badge {
+    font-family: var(--f1);
+    font-size: 26px;
+    color: var(--gg5);
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .artRol-subtitle {
+    font-family: 'Cinzel', serif;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--n4);
+    border-top: 1px solid var(--gg3);
+    margin-top: 4px;
+    padding-top: 3px;
+  }
+
+  /* --- CUERPO DE TEXTO (Ajustado el padding para cuando insertes texto) --- */
+  .artRol-body {
+    background-color: var(--n1); 
+    background-image: radial-gradient(rgba(0,0,0,0.02) 15%, transparent 15%),
+                      radial-gradient(rgba(0,0,0,0.02) 15%, transparent 15%);
+    background-size: 4px 4px;
+    background-position: 0 0, 2px 2px;
+    padding: 40px 40px;
+    line-height: 1.7;
+    font-size: 14px;
+    text-align: justify;
+    min-height: 100px; 
+  }
+  
+  .artRol-body i, .artRol-body b, .artRol-body strong {color:var(--gg6); font-size:14px;}
+
+  /* --- PIE DE PÁGINA (GRIS / OSCURO) --- */
+  .artRol-footer {
+    background-color: var(--n4);
+    color: var(--n1);
+    padding: 30px 25px;
+    font-size: 12px;
+    text-align: center;
+    border-top: 4px solid var(--gg6);
+  }
+
+  .artRol-footer p {
+    font-family: 'Cinzel', serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--gg6);
+    letter-spacing: 1.5px;
+    font-weight: 600;
+  }
+
+  .artRol-datos-container {
+    background-color: var(--n4);
+    border: 1px dashed var(--gg6);
+    padding: 15px 20px;
+    margin: 0 auto 20px auto;
+    max-width: 85%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .artRol-dato-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .artRol-dato-item i {
+    color: var(--gg6);
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
+  }
+
+  .artRol-dato-item span {
+    color: var(--n1);
+  }
+
+  .artRol-copyright {
+    font-size: 10px;
+    color: var(--gg3);
+    margin-top: 20px;
+  }
