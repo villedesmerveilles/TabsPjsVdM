@@ -1,0 +1,211 @@
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+       
+        .TanvigameC {
+            width: 560px;
+            margin: 0 auto;
+            background-color: var(--n4); 
+            padding: 35px;
+            border-radius: 12px;
+         
+        }
+
+        /* ENCABEZADO PRINCIPAL */
+        .TanvigameH {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--gg2);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .TanvigameHTitulo {
+            font-size: 20px;
+            font-family:var(--f1);
+            color: var(--gg6);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .TanvigameHTitulo::before {
+            content: "🎮";
+            font-size: 20px;
+        }
+        
+        .TanvigameHSub {
+            font-size: 13px;
+            color: var(--n1);
+            margin-top: 4px;
+        }
+
+        .TanvigameBadge {
+            background-color:red;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .TanvigameN {
+            background-color: var(--n4);
+            border-left: 4px solid var(--gg6);
+            padding: 16px;
+            border-radius: 4px;
+            margin-bottom: 35px;
+            font-size: 14px;
+            color: var(--n1);
+        }
+
+        .TanvigameNTitulo {
+            color: var(--gg6);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+
+        .TanvigameNTexto {
+            display: block;
+        }
+
+
+        .TanvigameT {
+            display: table;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        
+        .TanvigameF {
+            display: table-row;
+        }
+        
+        .TanvigameCelda {
+            display: table-cell;
+            width: 60%;
+            padding: 20px;
+            vertical-align: top;
+        }
+        
+        /* Encabezados de Columnas */
+        .TanvigameTh {
+            color: var(--gg6);
+          font-family:var(--f7);
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            border-bottom: 2px solid var(--gg3);
+        }
+        
+        
+        .TanvigameCard {
+            background-color: var(--n4);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            border: 2px solid #23a55a; /* Verde "Hablando" */
+        }
+
+        .TanvigameAvatar {
+            width: 48px;
+            height: 48px;
+            background-color: #5865f2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .TanvigameSpeech {
+            flex-grow: 1;
+        }
+
+        .TanvigameUser {
+            font-weight: 600;
+            color: var(--n1);
+            font-size: 15px;
+            display: block;
+            margin-bottom: 6px;
+        }
+        
+        .TanvigameDialogo {
+            font-size: 14px;
+            color: var(--n1);
+            background-color: var(--n4);
+            padding: 10px 14px;
+            border-radius: 6px;
+            border-left: 3px solid var(--gg6);
+        }
+      
+        .TanvigameAccionT {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--gg6);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .TanvigameAccionB {
+            background-color: var(--n4);
+            border: 1px solid var(--gg6);
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--n1);
+            margin-bottom: 15px;
+        }
+        
+        /* Cuadro para la pantalla compartida */
+        .TanvigameStream {
+            border: 1px dashed var(--gg6);
+            background-color: var(--n4);
+            border-radius: 8px;
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .TanvigameStreamUi {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #f2f3f5;
+        }
+        
+        .TanvigameStreamTxt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 13px;
+            color: #4e5058;
+            text-align: center;
+        }
+
+        .TanvigameStream img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
