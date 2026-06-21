@@ -1,0 +1,157 @@
+    /* Importación de fuentes */
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=La+Belle+Aurore&family=Quicksand:wght@400;500;600&display=swap');
+
+    /* CONTENEDOR PRINCIPAL: PAPEL DE ACUARELA / GRANO GRUESO */
+    .FilipC-main {
+        max-width: 500px;
+        width: 100%;
+        margin: 20px auto;
+        padding: 35px 30px 20px 30px;
+        position: relative;
+        box-sizing: border-box;
+        font-family: 'Quicksand', sans-serif;
+        background-color: var(--n1); 
+        background-image: 
+            radial-gradient(rgba(191, 172, 151, 0.25) 1px, transparent 0),
+            radial-gradient(rgba(191, 172, 151, 0.25) 1px, transparent 0);
+        background-size: 4px 4px;
+        background-position: 0 0, 2px 2px;
+
+        /* Borde del papel ligeramente envejecido */
+        border: 1px solid #e3dac9;
+        box-shadow: 
+            0 12px 28px rgba(0,0,0,0.08),
+            inset 0 0 40px rgba(184, 153, 116, 0.08);
+    }
+
+    /* EL CABALLETE: Soporte de madera rústica */
+    .FilipC-wood-shelf {
+        width: 500px;
+        height: 16px;
+        margin-bottom:10px;
+        margin: 0px auto;
+        margin-top: -20px;
+        background: linear-gradient(to bottom, var(--n4) 0%, var(--gg6) 100%);
+        border-radius: 2px;
+        box-shadow: 
+            0 6px 12px rgba(0,0,0,0.15), 
+            inset 0 1px 0 rgba(255,255,255,0.1);
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Pata del caballete */
+    .FilipC-wood-shelf::after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        left: 45%;
+        width: 10%;
+        height: 20px;
+        background: var(--n4);
+        clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+        opacity: 0.95;
+    }
+
+    /* CABECERA Y BROCHAZO DE ÓLEO */
+    .FilipC-header {
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Mancha de pintura fresca donde va el título */
+    .FilipC-paint-stroke {
+        display: inline-block;
+        padding: 8px 32px;
+        position: relative;
+        background: linear-gradient(135deg, var(--n4) 0%, var(--gg6) 100%);
+        border-radius: 255px 15px 225px 35px / 35px 225px 20px 255px;
+        box-shadow: 
+            -3px 3px 0 rgba(184, 153, 116, 0.4),
+            0 4px 8px rgba(0,0,0,0.15);
+        transform: rotate(-1deg);
+    }
+
+    .FilipT-title {
+        font-family: 'Cinzel', serif;
+        font-size: 21px;
+        color: var(--n1); /* Título claro sobre la pintura oscura */
+        letter-spacing: 3px;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .FilipT-subtitle {
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 20px;
+        color: var(--gg6);
+        margin: 10px 0 0 0;
+        display: block;
+    }
+
+    /* FILA DE DATOS */
+    .FilipC-meta-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 2;
+        border-top: 1px dashed var(--gg6);
+        border-bottom: 1px dashed var(--gg6);
+    }
+
+    .FilipC-meta-item {
+        flex: 1;
+        text-align: center;
+        font-size: 11px;
+        color: var(--gg6);
+    }
+
+    .FilipC-meta-item:not(:last-child) {
+        border-right: 1px solid rgba(222, 211, 193, 0.6);
+    }
+
+    .FilipT-meta-label {
+        display: block;
+        font-family: 'Cinzel', serif;
+        font-size: 8.5px;
+        color: var(--n4);
+        margin-bottom: 2px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .FilipT-meta-value {
+        font-style: italic;
+    }
+
+    /* TEXTO PRINCIPAL */
+    .FilipC-text-block {
+        position: relative;
+        z-index: 2;
+        padding: 0 5px;
+    }
+
+    .FilipT-lore {
+        font-size: 14px;
+        line-height: 1.85;
+        color: var(--n4); 
+        text-align: justify;
+        margin: 0;
+        letter-spacing: 0.1px;
+    }
+
+    .FilipT-lore::first-letter {
+        font-family: 'Cinzel', serif;
+        font-size: 32px;
+        float: left;
+        margin-right: 8px;
+        line-height: 0.9;
+        color: var(--gg6);
+        font-weight: 700;
+    }
